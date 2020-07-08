@@ -1,0 +1,15 @@
+
+ <div class="login">
+    <div class="login-triangle"></div>
+    
+    <h2 class="login-header">Log in</h2>
+  
+    <form class="login-container" #nF="ngForm" (ngSubmit)="onSubmit()">
+        <!-- <p><input type="text" class="btn"placeholder="id No." [(ngModel)]="id" name="id"></p> -->
+      <p><input type="text" class="btn" placeholder="UserName"  [(ngModel)]="username" name="username"></p>
+      <p><input type="password" class="btn" placeholder="Password" [(ngModel)]="password" name="password"></p>
+      <p><input type="submit" class="btn"value="Log in"></p>
+    </form>
+   
+  </div>
+  {{this.tUser}}

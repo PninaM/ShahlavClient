@@ -1,0 +1,59 @@
+
+
+.mainNav{
+    background-color:transparent;
+    /* margin-top: 3%; */
+    direction:rtl;
+}
+
+.linkNav{
+    color:white;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.linkNav:hover{
+    
+    color: #F4A460;
+}
+
+
+
+.shahlavbg{
+    background-image:url("./pictures/pic_005.jpg");
+    background-repeat:no-repeat;
+    bottom: 0;
+    left: 0;
+    background-size:100% auto;
+    height: 287px;
+    object-fit: cover;
+    object-position: bottom center;
+    vertical-align: middle;
+
+  
+
+}
+.shahlavtxt{
+    position: relative;
+    margin-top: 30px;
+    height: 20%;
+    width: 100%;
+    /* overflow: auto; */
+    background-color: darkorange;
+    opacity: 0.9; 
+    background-attachment:fixed
+    
+}
+
+
+.footer {
+    position:fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0.3rem;
+    background-color:#191970;
+    color:whitesmoke;
+  }
+

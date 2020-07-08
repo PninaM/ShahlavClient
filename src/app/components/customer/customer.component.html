@@ -1,0 +1,99 @@
+<!-- <div id="customer" class="container-fluid" fxLayout="column">
+   <p class="text-orange display-4">
+        שלום לקוח 
+  <br/>
+</p> -->
+        <!-- נשמח לעבוד איתך ולספק את השרות המתאים -->
+   
+    <!-- <div class="row justify-content-center">
+     <app-customer-register class="col-4"></app-customer-register>
+</div> -->
+
+<!-- </div> --> 
+
+<!-- <div>sideNav</div> -->
+<!-- <mat-sidenav-container>
+<div>ניתוב מהזמנות לכאן- שימוש בילדים בראוטר והבאת ראוטראאוטלט לכאן פונק  נגאוניניט</div>
+  <mat-sidenav open="true">
+   <div class="sidenav"> -->
+      <!-- <div class="sidelink" (click)="openOrders()"><fa-icon [icon]="faAngleLeft"></fa-icon> הזמנות פעילות<br></div>
+      <div class="sidelink"><fa-icon [icon]="faAngleLeft"></fa-icon> כל ההזמנות<br></div> 
+      <div class="sidelink"><fa-icon [icon]="faAngleLeft"></fa-icon>  מציאת הזמנה לפי תאריך <br></div> 
+      <div class="sidelink"><fa-icon [icon]="faAngleLeft"></fa-icon>  מציאת הזמנה לפי מספר הזמנה<br></div> 
+      <div class="sidelink"><fa-icon [icon]="faAngleLeft"></fa-icon> עריכת הזמנה<br></div> -->
+    <!-- </div> -->
+  <!-- </mat-sidenav>
+  
+  <דוגמא של נבבר מקורס יודמי>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+</mat-sidenav-content>
+</mat-sidenav-container>  -->
+
+<!-- <mat-sidenav-container>
+  <mat-sidenav  position="end" opened="true">
+    <p>sidenav working!</p>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    working????
+    <router-outlet></router-outlet>
+ <button (click)=sideNav.toggle()>show sideNav</button> -->
+ 
+<!--   
+  </mat-sidenav-content>
+</mat-sidenav-container>  -->
+
+<!-- <שימוש בליסט במקום נב בר> -->
+<!-- <mat-list style="float:right">
+  <mat-list-item> <div class="sidelink" (click)="openOrders()"><fa-icon [icon]="faAngleLeft"></fa-icon> הזמנות פעילות</div> </mat-list-item>
+  <mat-list-item> <div class="sidelink"><fa-icon [icon]="faAngleLeft"></fa-icon> כל ההזמנות</div> </mat-list-item>
+  <mat-list-item> Paprika </mat-list-item>
+ </mat-list> -->
+
+ <mat-nav-list class="sidenav container-fluid">
+
+  <mat-list-item class="sidelink">
+     <a matLine [routerLink]="['order', {orderFunc:'openOrders'}]" routerLinkActive="active">הזמנות פעילות</a>
+  </mat-list-item>
+  <mat-list-item class="sidelink">
+    <a matLine [routerLink]="['order', {orderFunc:'allOrders'}]" routerLinkActive="active">כל ההזמנות</a>
+ </mat-list-item>
+ <mat-list-item class="sidelink">
+  <a matLine [routerLink]="['order']">מציאת הזמנה לפי תאריך</a>
+</mat-list-item>
+<mat-list-item class="sidelink">
+  <a matLine [routerLink]="['order']"> מציאת הזמנה לפי מספר הזמנה </a>
+</mat-list-item>
+<mat-list-item class="sidelink">
+  <a matLine [routerLink]="['order']" >עריכת הזמנה</a>
+</mat-list-item>
+
+</mat-nav-list>
+
+<div class="content">
+  <p class="text-orange display-4">
+    שלום לקוח 
+  <br/>
+  </p>
+  <div>ניתוב לדף הזמנות</div>
+<a  href="home/order">להזמנת מוצרים לחץ כאן</a>
+<router-outlet></router-outlet>
+ <div>-Bodyתוכן הדף</div>
+ <div>פרופיל לקוח- צד שמאל</div>
+ <div> הצגת הזמנות פעילות בטבלה או מבצעים חדשים</div>
+ <div>?? בכרטיס או דיב מדיניות החברה ביטול הזמנות </div>
+ <div>אפשרות ליצירת קשר עם סוכן וירטואלי? בצד שמאל למטה יכול להיות שנעביר לדף בית</div>
+</div>
+ 
+
+
+
+
+
+
+<input type="button" class="btn back-orange"(click)= "funcGet()" value="GET">
+<input type="button"class="btn back-orange" (click)= "funcAdd()" value="ADD">
+<input type="button"class="btn back-orange" (click)= "funcDelete()" value="DELETE">
+<input type="button" class="btn back-orange"(click)= "funcUpdate()" value="UPDATE"> 
+
+

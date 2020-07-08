@@ -1,0 +1,12 @@
+.error1{
+    background-color: orange; 
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100px;
+    text-align: center;
+}
+
+.error2{
+    color: orange;
+    font-size: 80px;
+    text-align: center
+}

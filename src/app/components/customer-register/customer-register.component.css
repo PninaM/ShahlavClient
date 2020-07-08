@@ -1,0 +1,32 @@
+.back-orange{
+  background-color: orangered;
+  color: white;
+  box-shadow: 0 0 0 0.2rem white;
+}
+.text-orange{
+  color: orangered;
+}
+
+.form-control{
+    color: orange;
+}
+  .form-control:focus {
+    border-color: orangered;
+    box-shadow: 0 0 0 0.2rem orangered;
+  }
+  .form-control::-webkit-input-placeholder {
+    color: orange;
+  
+  }
+  
+  /* .form-control::-moz-placeholder {
+    color:orange;
+
+  } */
+  
+  /* .form-control:-ms-input-placeholder {
+    color:orange;
+
+  } */
+  
+  
