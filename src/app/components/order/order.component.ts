@@ -30,14 +30,15 @@ getAllOrders(){
 
   ngOnInit() {
 
+  //this.activatedRoute.paramMap("")
   
-    if(this.orderFunc.match('openOrders'))
-    this.getOpenOrders();
-    if(this.orderFunc.match('allOrders'))
-    this.getAllOrders();
     
     this.activatedRoute.params.subscribe(params=>{
       this.orderFunc=params['orderFunc'];
+      if(this.orderFunc.match('openOrders'))
+      this.getOpenOrders();
+      if(this.orderFunc.match('allOrders'))
+      this.getAllOrders();
       
     })
    

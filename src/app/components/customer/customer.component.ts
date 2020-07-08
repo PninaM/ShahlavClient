@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import{CustomerService}from "../../services/customer.service";
-import{Customer}from "../../models/customer";
+import{Customer}from "../../models/customer.models";
 import { DatePipe } from '@angular/common';
 import{faAngleLeft} from'@fortawesome/free-solid-svg-icons';
 import { Router, RouterOutlet } from '@angular/router';
