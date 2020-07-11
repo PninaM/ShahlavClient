@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ManagerService } from './services/manager.service';
-import { Driver } from './models/driver';
-import { Manager } from './models/manager';
+import { Driver } from './models/driver.models';
+import { Manager } from './models/manager.models';
 
 
 @Component({

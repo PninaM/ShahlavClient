@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import {OrderComponent} from './components/order/order.component';
@@ -24,9 +24,13 @@ const routes: Routes = [
   { path: 'home/customerRegister', component: CustomerRegisterComponent },
   { path: 'home/customer', component: CustomerComponent,
   children: [
+    { path: 'order/openOrders', component:OrderComponent},
+    { path: 'order/allOrders', component:OrderComponent},
     { path: 'order', component:OrderComponent}
   ] },
-  { path: 'home/login', component: LogInComponent },
+  { path: 'home/login', component: LogInComponent, 
+ 
+},
   { path: 'home/customerin', component: CustomrInComponent },
   { path: 'home/custdetails', component: CustDetailsComponent },
   { path: 'home/provider', component: ProviderComponent },

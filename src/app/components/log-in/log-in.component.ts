@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { ManagerService } from 'src/app/services/manager.service';
-import {Manager}from '../../models/manager';
+import {Manager}from '../../models/manager.models';
 import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 import { UsersService } from 'src/app/services/users.service';
 
@@ -16,7 +16,7 @@ export class LogInComponent implements OnInit {
   username:string="";
   password:string="";
   // id:string="";
-  tUser:string="hip";
+  tUser="hip";
   manager:Manager;
   constructor(private route: Router, private activatedRoute: ActivatedRoute, private managerService:ManagerService, public userservice:UsersService) {
     
@@ -56,8 +56,14 @@ onSubmit(){
    }
   
   ngOnInit() {
+
+  
     this.activatedRoute.params.subscribe(params=>{
+      // this.tUser=this.activatedRoute.snapshot.routeConfig.path.split('/')[2];
       this.tUser=params['tUser'];
+      console.log(this.tUser);
+    
+  
     })
   
   }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ManagerService } from 'src/app/services/manager.service';
-import { Manager } from 'src/app/models/manager';
+import { Manager } from 'src/app/models/manager.models';
 
 @Component({
   selector: 'app-manager',

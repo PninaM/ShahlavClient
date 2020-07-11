@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import{Order} from '../../models/order';
+import{Order} from '../../models/order.models';
 import { UsersService } from 'src/app/services/users.service';
 import { OrderService } from 'src/app/services/order.service';
 import{Router, ActivatedRoute}from '@angular/router'
@@ -15,7 +15,8 @@ export class OrderComponent implements OnInit {
   userOrders=new Array<Order>();
   orderFunc="";
   constructor(public orderService:OrderService, public route: Router, public activatedRoute: ActivatedRoute) { 
-
+   
+   
   }  
 
 getOpenOrders(){
@@ -31,16 +32,16 @@ getAllOrders(){
   ngOnInit() {
 
   //this.activatedRoute.paramMap("")
-  
-    
-    this.activatedRoute.params.subscribe(params=>{
-      this.orderFunc=params['orderFunc'];
+  // console.log(this.activatedRoute.snapshot.routeConfig.path.split('/')[1]);
+
+    this.activatedRoute.params.subscribe(params=>
+      {this.orderFunc=this.activatedRoute.snapshot.routeConfig.path.split('/')[1];
       if(this.orderFunc.match('openOrders'))
       this.getOpenOrders();
       if(this.orderFunc.match('allOrders'))
       this.getAllOrders();
       
-    })
+    });
    
    
   }
